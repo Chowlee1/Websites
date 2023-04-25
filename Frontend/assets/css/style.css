@@ -1,0 +1,124 @@
+*{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.navbar ul li a{
+    color: black;
+}
+
+.navbar ul li a:hover{
+    color: grey;
+    transition: none;
+    transform: none;
+    border-left: 1px solid rgba(128, 128, 128, 0.219);
+    border-right: 1px solid rgba(128, 128, 128, 0.219);
+}
+.topp{
+    text-decoration: none;
+    color: white;
+    font-size: small;
+}
+
+.topp:hover{
+    text-decoration: none;
+    color: white;
+}
+
+/* Overlay */
+.navbar-overlay{
+    display: none;
+    position: absolute;
+    z-index: 5;
+    font-weight: lighter !important;
+    font-size: medium;
+    border: 1px solid;
+    border-color: rgba(128, 128, 128, 0.281);
+    background-color: white;
+}
+ 
+
+.navbar ul li:hover .navbar-overlay{
+    display: block;
+    
+}
+
+.navbar-overlay ul{
+    display: block;
+}
+
+.navbar-overlay ul li a{
+    color: black;
+    text-decoration: none;
+}
+
+.navbar-overlay ul li a:hover{
+    color: gray;
+    text-decoration: none;
+    border-left: none;
+    border-right: none;
+}
+
+#overlay-name{
+    width: 40px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.315);
+    padding-bottom: 20px;
+}
+
+/* overlay end */
+
+.navbar-image{
+    text-decoration: none;
+    text-align: center;
+    color: white !important;
+    position: absolute;
+    bottom: 20% ;
+    left: 55%;
+
+}
+
+.navbar-image:hover{
+    color: white !important;
+    text-decoration: underline;
+}
+
+
+.footer-list li a{
+    color: black;
+    text-decoration: none;
+}
+
+.icono a{
+    color: black;
+}
+
+
+
+
+
+@media (max-width: 768px){
+    .toppp{
+        display: none;
+    }  
+
+    .quicklinks{
+        display: none;
+    }
+    .chet{
+        display: none;
+    }
+    .product-hero{
+        display: none;
+    }
+}
+
+@media (max-width: 480px){
+    .login-phone{
+        display: block !important;
+    }
+    .cheat{
+        display: block !important;
+    }
+    .product-mobile{
+        display: block !important;
+    }
+}

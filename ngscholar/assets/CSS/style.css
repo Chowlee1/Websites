@@ -1,0 +1,254 @@
+.navbar{
+    background-color: #19382c;
+
+}
+
+.navbar ul li a{
+    text-decoration: none !important;
+    color: white;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    border-color: rgba(128, 128, 128, 0.281);
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+}
+
+
+
+.navbar ul li a:hover{
+    color: grey;
+}
+
+.navbar ul li a:focus{
+    color: grey;
+}
+
+.navbar ul ul li a:hover{
+    color: black;
+    background-color: white;
+
+}
+
+.tip a{
+    color: white !important;
+}
+
+.tip a:focus{
+    color: grey !important;
+}
+
+
+.tip ul li a:hover{
+    color: black !important;
+}
+
+.tip ul li a:focus{
+    background-color: white !important;
+    color: grey !important;
+}
+
+.work{
+    font-size: 30px;
+    background-image: linear-gradient(60deg, #43cfd9, #74d14c) !important;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+.workk{
+    background-image: linear-gradient(60deg,#74d14c, #8bcffc) !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.register{
+    background-image: url("../images/guerrillabuzz-crypto-pr-JYoAr_dCyos-unsplash.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.cue{
+    /* border-radius: 50px !important;
+    box-shadow: 20px 20px 30px #d9d9d9, -20px -20px 30px #ffffff !important; */
+    background-color: rgb(255, 255, 255, .5);
+    color: #19382c;
+    font-weight: bold;
+    font-size: large;
+}
+
+.cards{
+    background-color: rgb(255, 255, 255, .5);
+    color: #19382c;
+    font-weight: bold; 
+}
+
+
+footer{
+    margin-bottom: 0;
+    padding-bottom: 0px;
+    background: transparent;
+}
+footer h3{ 
+    font-size: 30px ;
+    font-weight: lighter;
+    color: grey;
+}
+
+footer a{
+    color:grey !important;
+    font-size: 25px !important; 
+    font-weight:bold !important;
+}
+
+@media (max-width: 768px){
+    .first{
+        display: block !important;
+    }  
+    .poster{
+        display: none !important; 
+    }
+
+}
+
+@media (max-width: 480px){
+    .first{
+        display: none !important;
+    }
+    .post{
+        display: block !important;
+    }
+}
+
+
+
+.hidden{
+    display: none;
+}
+.back-to-top{
+    transition: 0.5s ;
+    position: fixed ; 
+    right:2rem ; 
+    bottom:2rem;
+    background-color: #19382c ;
+    color: white;
+    width: 50px ;
+    height: 50px;
+    border-radius: 50% ;
+    align-items: center;
+    border: 0;
+}
+
+.back-to-top i{
+    font-size: 30px ;
+}
+
+.back-to-top:hover{
+    transform: scale(1.1);
+}
+
+
+
+.card-hover{
+    transition: 0.5s ;
+}
+.card-hover:hover{
+    transform: scale(1.05);
+}
+
+.search-btn{
+    border: none;
+    background: transparent;
+    border-radius: 50%;
+    cursor: pointer;
+    color: white;
+    z-index: 2;
+
+}
+
+.search-field{
+
+    transform-origin: left right;
+    transform: scale(0);
+    background: transparent;
+    transition: .2s;
+    transition-delay: .2s;
+
+}
+
+.search-field.active{
+    
+    transform: scale(1);
+    transition-delay: 0s;
+
+}
+
+.search{
+    opacity: 0;
+    transition: .2s;
+    transition-delay: 0s;
+}
+
+.search-field.active .search{
+    opacity: 1;
+    transition: .2s;
+    transition-delay: .2s;
+}
+
+.share-btn{
+    border: none;
+    background: #fff;
+    color: #ff7d7d;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.share-options{
+    transform-origin: bottom left;
+    transform: scale(0);
+    background: transparent;
+    color: #fff;
+    transition: .5s;
+    transition-delay: .5s;
+}
+
+.share-options.active{
+    transform: scale(1);
+    transition-delay: 0s;
+}
+
+.social-media{
+    opacity: 0;
+    transition: .5s;
+    transition-delay: 0s;
+    flex-wrap: wrap;
+    height: 50px;
+}
+
+.social-media-btn{
+    border: none;
+    /* width: 25px;
+    height: 25px;*/
+    border-radius: 50%;
+    color: #fff;
+    /* line-height: 25px;
+    font-size: 15px; */
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+}
+
+
+.share-options.active .social-media{
+    opacity: 1;
+    transition: .5s;
+    transition-delay: .5s;
+}
+
